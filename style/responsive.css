@@ -1,0 +1,108 @@
+@media screen and (max-width: 1200px){
+    #bigCard .secondCard{
+        margin-top: 25px;
+    }
+
+    #statistics .statisticsA .statisticsGraphA p{
+        padding: 0;
+    }
+
+    #statistics .statisticsA .statisticsItems{
+        margin-top: 25px;
+    }
+
+    #statistics .statisticsB{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    #figma #menu{
+        text-align: center;
+    }
+
+    #figma #menu .navbar nav ul li a{
+        justify-content: center;
+    }
+
+    #figma #menu #help{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #analyticsCard .analyticsCard-item3, .analyticsCard-item4{
+        margin-top: 20px;
+    }
+
+    #bigCard .first-card .first-card-img{
+        padding-top: 50px;
+    }
+
+    #bigCard .first-card .first-card-content a{
+        bottom: -45px;
+    }
+    
+
+    #bigCard .first-card .first-card-img {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #bigCard .first-card .first-card-img img{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    #figma #header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #figma #header .pages{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #figma #header .set{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    #figma #menu #help{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #analyticsCard .analyticsCard-item2{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #figma #menu #help{
+        width: 50%;
+    }
+
+    #figma .authorsTable table td{
+        padding: 0 20px;
+    }
+
+    #figma .projectTable table td{
+        padding: 0 10px;
+    }
+
+    #bigCard .first-card .first-card-img img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #figma #menu #help{
+        width: 70%;
+    }
+}

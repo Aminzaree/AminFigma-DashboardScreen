@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Screen</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/grid.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/ResponsiveMenu.css">
+</head>
+<body>
+
+     <!-- Responsive Menu -->
+     <aside>
+        <span class="menuicon" id="menuicon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+        <div id="responsiveNav">
+            <nav class="responsiveNav">
+                <ul>
+                    <li class="nav-items li-active"onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-chart-simple"></i>Tabels</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-credit-card"></i>Billing</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-wrench"></i>RTL</a></li>
+                    <h3>ACCOUNT PAGES</h3>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-file"></i>Sign In</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-rocket"></i>Sign Up</a></li>
+                </ul>
+                <div id="help">
+                    <div class="help">
+                        <a href="#"><i class="fa-solid fa-question"></i></a>
+                        <h2>Need help?</h2>
+                        <p>Please check our docs</p>
+                        <button type="button">DOCUMENTION</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Figma -->
+    <div id="figma">
+        <a href="#" id="toTop">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <div id="menu">
+                        <div class="logo">
+                            <img src="img/logo-creative-tim-black.png" alt="Logo">
+                            <h1>PURITY UI DASHBOARD</h1>
+                        </div>
+                        <div class="navbar">
+                            <nav>
+                                <ul>
+                                    <li class="nav-items li-active"onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-chart-simple"></i>Tabels</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-credit-card"></i>Billing</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-wrench"></i>RTL</a></li>
+                                    <h3>ACCOUNT PAGES</h3>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-file"></i>Sign In</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-rocket"></i>Sign Up</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="help">
+                            <div class="help">
+                                <a href="#"><i class="fa-solid fa-question"></i></a>
+                                <h2>Need help?</h2>
+                                <p>Please check our docs</p>
+                                <button type="button">DOCUMENTION</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <div id="header">
+                        <div class="pages">
+                            <h3><span>Pages</span> / Dashboard</h3>
+                        </div>
+                        <div class="set">
+                            <!-- <input type="search" name="search" id="search" placeholder="Type here"> -->
+                            <div class="input-set">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="search" name="search" id="search" placeholder="Type here">
+                            </div>
+                            <a href="#"><i class="fa-solid fa-user"></i>Sign In</a>
+                            <a href="#"><i class="fa-solid fa-gear"></i></a>
+                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        </div>
+                    </div>
+                    <div id="analyticsCard">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="analyticsCard-item analyticsCard-item1">
+                                    <div class="analyticsCard-content">
+                                        <h2>Today's User</h2>
+                                        <p>$53,000 <span>+55%</span></p>
+                                    </div>
+                                    <a href="#"><i class="fa-solid fa-wallet"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="analyticsCard-item analyticsCard-item2">
+                                    <div class="analyticsCard-content">
+                                        <h2>Today's Money</h2>
+                                        <p>2,300 <span>+5%</span></p>
+                                    </div>
+                                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="analyticsCard-item analyticsCard-item3">
+                                    <div class="analyticsCard-content">
+                                        <h2>New Clients</h2>
+                                        <p>+3,052 <span style="color: red;">-14%</span></p>
+                                    </div>
+                                    <a href="#"><i class="fa-solid fa-file"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="analyticsCard-item analyticsCard-item4">
+                                    <div class="analyticsCard-content">
+                                        <h2>Total Sales</h2>
+                                        <p>$173,000 <span>+8%</span></p>
+                                    </div>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="bigCard">
+                        <div class="row">
+                            <div class="col-12  col-xl-7">
+                                <div class="first-card">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="first-card-content">
+                                                    <h3>Built by developers</h3>
+                                                    <h2>Purity UI Dashboard</h2>
+                                                    <p>From colors, cards, typography to complex elements,
+                                                    you will find the full documentation.</p>
+                                                    <a href="#">Read more <i class="fa-solid fa-arrow-right-long"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="first-card-img">
+                                                <img src="img/Image.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12  col-xl-5">
+                                <div class="secondCard">
+                                    <div class="secondCard-content">
+                                            <h2>Work with the Rockets</h2>
+                                            <p>Wealth creation is an evolutionarily recent positive-sum game.
+                                                It is all about who take the opportunity first.</p>
+                                            <a href="#">Read more <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="statistics">
+                        <div class="row">
+                            <div class="col-12 col-xl-5">
+                                <div class="statisticsA">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="statisticsGraphA">
+                                                <img src="img/Graph(1).png" alt="Graph">
+                                                <h2>Active Users</h2>
+                                                <p><span>(+23)</span> than last week</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-xl-3">
+                                                    <div class="statisticsItems">
+                                                        <div class="aIcon">
+                                                            <a href="#"><i class="fa-solid fa-wallet"></i></a>
+                                                            <p>Users</p>
+                                                        </div>
+                                                        <h2>32,984</h2>
+                                                        <!-- <img src="img/Progress(5).png" alt=""> -->
+                                                        <progress id="progress" value="65" max="100">65</progress>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-xl-3">
+                                                    <div class="statisticsItems">
+                                                        <div class="aIcon">
+                                                            <a href="#"><i class="fa-solid fa-rocket"></i></a>
+                                                            <p>Clicks</p>
+                                                        </div>
+                                                        <h2>2,42m</h2>
+                                                        <!-- <img src="img/Progress(5).png" alt=""> -->
+                                                        <progress id="progress" value="85" max="100">85</progress>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-xl-3">
+                                                    <div class="statisticsItems">
+                                                        <div class="aIcon">
+                                                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                            <p>Sales</p>
+                                                        </div>
+                                                        <h2>2,400$</h2>
+                                                        <!-- <img src="img/Progress(5).png" alt=""> -->
+                                                        <progress id="progress" value="40" max="100">40</progress>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-xl-3">
+                                                    <div class="statisticsItems">
+                                                        <div class="aIcon">
+                                                            <a href="#"><i class="fa-solid fa-wrench"></i></a>
+                                                            <p>Items</p>
+                                                        </div>
+                                                        <h2>320</h2>
+                                                        <!-- <img src="img/Progress(5).png" alt=""> -->
+                                                        <progress id="progress" value="70" max="100">70</progress>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-7">
+                                <div class="statisticsB">
+                                    <div class="statisticsB-content">
+                                        <h2>Sales overview</h2>
+                                        <p><span>(+5) more</span> in 2021</p>
+                                    </div>
+                                    <div class="statisticsB-graph">
+                                        <img src="img/Graph.png" alt="graph">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contentCards">
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="projectTable">
+                                    <h2 class="projectTitle">Projects</h2>
+                                    <p class="project-p"><i class="fa-solid fa-circle-check"></i><span>30 done</span> this month</p>
+                                    <table>
+                                        <tr class="tabelTitle">
+                                            <th>COMPANIES</th>
+                                            <th>MEMBERS</th>
+                                            <th>BUDGET</th>
+                                            <th>COMPLETION</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="companies">
+                                                <img src="img/Icon.png" alt="">
+                                                <h3>Chakra Soft UI Version</h3>
+                                            </td>
+                                            <td class="budget">
+                                                <img src="img/Members.png" alt="Members">
+                                            </td>
+                                            <td class="projectStatus">
+                                                <h3>$14,000</h3>
+                                            </td>
+                                            <td class="completion">
+                                                <div class="completion-content">
+                                                    <!-- <img src="img/Progress.png" alt=""> -->
+                                                    <label for="progress">10%</label>
+                                                    <progress id="progress" value="10" max="100">10</progress>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="companies">
+                                                <img src="img/Icon(1).png" alt="">
+                                                <h3>Add Progress Track</h3>
+                                            </td>
+                                            <td class="budget">
+                                                <img src="img/Members(1).png" alt="Members">
+                                            </td>
+                                            <td class="projectStatus">
+                                                <h3>$3,000</h3>
+                                            </td>
+                                            <td class="completion">
+                                                <div class="completion-content">
+                                                    <!-- <img src="img/Progress(1).png" alt=""> -->
+                                                    <label for="progress">10%</label>
+                                                    <progress id="progress" value="10" max="100">10</progress>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="companies">
+                                                <img src="img/Icon(2).png" alt="">
+                                                <h3>Fix Platform Errors</h3>
+                                            </td>
+                                            <td class="budget">
+                                                <img src="img/Members(2).png" alt="Members">
+                                            </td>
+                                            <td class="projectStatus">
+                                                <h3>Not set</h3>
+                                            </td>
+                                            <td class="completion">
+                                                <div class="completion-content">
+                                                    <!-- <img src="img/Progress(2).png" alt=""> -->
+                                                    <label for="progress">100%</label>
+                                                    <progress id="progress" value="100" max="100">100</progress>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="companies">
+                                                <img src="img/Icon(3).png" alt="">
+                                                <h3>Lunch our Mobile App</h3>
+                                            </td>
+                                            <td class="budget">
+                                                <img src="img/Members(3).png" alt="Members">
+                                            </td>
+                                            <td class="projectStatus">
+                                                <h3>$32,000</h3>
+                                            </td>
+                                            <td class="completion">
+                                                <div class="completion-content">
+                                                    <!-- <img src="img/Progress(2).png" alt=""> -->
+                                                    <label for="progress">25%</label>
+                                                    <progress id="progress" value="25" max="100">25</progress>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="companies">
+                                                <img src="img/Icon(4).png" alt="">
+                                                <h3>Add the New Pricing Page</h3>
+                                            </td>
+                                            <td class="budget">
+                                                <img src="img/Members(4).png" alt="Members">
+                                            </td>
+                                            <td class="projectStatus">
+                                                <h3>$400</h3>
+                                            </td>
+                                            <td class="completion">
+                                                <div class="completion-content">
+                                                    <label for="progress">25%</label>
+                                                    <progress id="progress" value="25" max="100">25</progress>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="companies">
+                                                <img src="img/Icon-f.png" alt="">
+                                                <h3>Redesign New Online Shop</h3>
+                                            </td>
+                                            <td class="budget">
+                                                <img src="img/Members(5).png" alt="Members">
+                                            </td>
+                                            <td class="projectStatus">
+                                                <h3>$7,600</h3>
+                                            </td>
+                                            <td class="completion">
+                                                <div class="completion-content">
+                                                    <label for="progress">40%</label>
+                                                    <progress id="progress" value="40" max="100">40</progress>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="contentCards-overview">
+                                    <h2>Orders overview</h2>
+                                    <p><span>+30%</span> this month</p>
+                                    <div class="overview-items">
+                                        <i class="fa-solid fa-bell bell"></i>
+                                        <img src="img/Line.png" alt="">
+                                        <div class="overview-content">
+                                            <h3>$2400, Design changes</h3>
+                                            <p>22 DEC 7:20 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="overview-items">
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                        <img src="img/Line.png" alt="">
+                                        <div class="overview-content">
+                                            <h3>New order #4219423</h3>
+                                            <p>21 DEC 11:21 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="overview-items">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <img src="img/Line.png" alt="">
+                                        <div class="overview-content">
+                                            <h3>Server Payments for April</h3>
+                                            <p>21 DEC 9:28 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="overview-items">
+                                        <i class="fa-solid fa-credit-card"></i>
+                                        <img src="img/Line.png" alt="">
+                                        <div class="overview-content">
+                                            <h3>New card added for order #3210145</h3>
+                                            <p>20 DEC 3:52 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="overview-items">
+                                        <i class="fa-solid fa-box-open"></i>
+                                        <img src="img/Line.png" alt="">
+                                        <div class="overview-content">
+                                            <h3>Unlock packages for Development</h3>
+                                            <p>19 DEC 11:35 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="overview-items">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <img src="img/Line-1.png" alt="">
+                                        <div class="overview-content">
+                                            <h3>New order #9851258</h3>
+                                            <p>18 DEC 4:41 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                        <div class="col-12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5">
+                    <div class="copy-right">
+                        <p>@ 2021, Made with ❤️ by <a href="#">Creative Tim</a> & <a href="#">Simmmple</a> for a better web</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Creative Tim</a></li>
+                            <li><a href="#">Simmmple</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">License</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.trunk.min.js"></script>
+    <script>
+        VANTA.NET({
+           //Add the id of your tag with the # before
+           el: "#responsiveNav",
+           //All the controles for the user
+           mouseControls: true,
+           touchControls: true,
+           gyroControls: false,
+           //Control the min-size of the animation
+           minHeight: 750.00,
+           minWidth: 200.00,
+           //Modify the sizing
+           scale: 1.00,
+           scaleMobile: 1.00,
+           //Customise the colors
+           color: 0x2d3748,
+           backgroundColor: 0X38b2ac,
+           //Customise the dots
+           points: 12.00,
+           maxDistance: 23.00,
+           spacing: 20.00
+           })
+       </script>
+</body>
+</html>
